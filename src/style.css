@@ -1,1 +1,35 @@
 @import './styles/reset.css';
+
+/* Add global styles here */
+
+
+
+
+
+
+/* Breakpoints for responsive css */
+
+/* 1. Large Phones (~400px) */
+@media (max-width: 400px) {
+  /* Add your styles here for large phones */
+}
+
+/* 2. Landscape Mobile (~568px) */
+@media (min-width: 401px) and (max-width: 568px) {
+  /* Add your styles here for landscape mobile devices */
+}
+
+/* 3. Tablet (~768px) */
+@media (min-width: 569px) and (max-width: 768px) {
+  /* Add your styles here for tablets */
+}
+
+/* 4. Small Desktop / Laptops (~1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Add your styles here for small desktops or laptops */
+}
+
+/* 5. Normal Desktop (~1300px) */
+@media (min-width: 1025px) and (max-width: 1300px) {
+  /* Add your styles here for normal desktop screens */
+}
