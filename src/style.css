@@ -16,42 +16,61 @@
   display: none;
 }
 
+#navbar-toggle {
+  width: 3rem;
+  height: 3rem;
+  background: black;
+  border: none;
+  padding: 0; 
+  margin: 0;
+  font: inherit; 
+  cursor: pointer; 
+}
+
 /* Small devices (phones in portrait mode) */
 @media (min-width: 320px) {
-    /* Styles for small devices */
+  /* Styles for small devices */
 }
 
 /* Medium devices (phones in landscape mode or smaller tablets) */
 @media (min-width: 480px) {
-    /* Styles for medium devices */
+  /* Styles for medium devices */
 }
 
 /* Larger phones or small tablets */
 @media (min-width: 600px) {
-    /* Styles for larger phones or small tablets */
+  /* Styles for larger phones or small tablets */
 }
 
 /* Tablets */
 @media (min-width: 768px) {
-    /* Styles for tablets */
+  /* Styles for tablets */
+  #navbar-toggle {
+    display: none;
+  }
+
+  .navbar-container {
+    height: 9.5rem;
+  }
+
 }
 
 /* Small desktop or large tablets in landscape */
 @media (min-width: 1024px) {
-    /* Styles for small desktops or larger tablets */
+  /* Styles for small desktops or larger tablets */
 }
 
 /* Laptops and desktops */
 @media (min-width: 1280px) {
-    /* Styles for laptops and desktops */
+  /* Styles for laptops and desktops */
 }
 
 /* Larger desktops */
 @media (min-width: 1440px) {
-    /* Styles for larger desktops */
+  /* Styles for larger desktops */
 }
 
 /* Very large screens */
 @media (min-width: 1920px) {
-    /* Styles for very large screens (4K and above) */
+  /* Styles for very large screens (4K and above) */
 }
