@@ -1,12 +1,10 @@
-# Vanilla Frontend Template
+# Christ-Like Carpentry Website
 
-Basic template for HTML, CSS, and JavaScript projects.
+Website for my Dad
 
 ## Usage
 
-- Clone or use as a template.
-- Open `index.html` to view.
-- Edit files to build your site.
+- coming soon
 
 ## License
 
