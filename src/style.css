@@ -1,31 +1,57 @@
-@import './styles/reset.css';
+@import "./styles/reset.css";
 
-/* Add global styles here */
-
-
-/* Breakpoints for responsive css */
-
-/* 1. Large Phones (~400px) */
-@media (max-width: 400px) {
-  /* Add your styles here for large phones */
+/* NAVBAR */
+.navbar-container {
+  display: flex;
+  background-color: rgb(166, 166, 166);
+  height: 6.6rem;
+  width: 100%;
+  /* height: 10.6rem; */
 }
 
-/* 2. Landscape Mobile (~568px) */
-@media (min-width: 401px) and (max-width: 568px) {
-  /* Add your styles here for landscape mobile devices */
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  display: none;
 }
 
-/* 3. Tablet (~768px) */
-@media (min-width: 569px) and (max-width: 768px) {
-  /* Add your styles here for tablets */
+/* Small devices (phones in portrait mode) */
+@media (min-width: 320px) {
+    /* Styles for small devices */
 }
 
-/* 4. Small Desktop / Laptops (~1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* Add your styles here for small desktops or laptops */
+/* Medium devices (phones in landscape mode or smaller tablets) */
+@media (min-width: 480px) {
+    /* Styles for medium devices */
 }
 
-/* 5. Normal Desktop (~1300px) */
-@media (min-width: 1025px) and (max-width: 1300px) {
-  /* Add your styles here for normal desktop screens */
+/* Larger phones or small tablets */
+@media (min-width: 600px) {
+    /* Styles for larger phones or small tablets */
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+    /* Styles for tablets */
+}
+
+/* Small desktop or large tablets in landscape */
+@media (min-width: 1024px) {
+    /* Styles for small desktops or larger tablets */
+}
+
+/* Laptops and desktops */
+@media (min-width: 1280px) {
+    /* Styles for laptops and desktops */
+}
+
+/* Larger desktops */
+@media (min-width: 1440px) {
+    /* Styles for larger desktops */
+}
+
+/* Very large screens */
+@media (min-width: 1920px) {
+    /* Styles for very large screens (4K and above) */
 }
