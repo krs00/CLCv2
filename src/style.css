@@ -128,6 +128,19 @@ a {
   }
 }
 
+/* extra breakpoint for navbar */
+@media (min-width: 960px) {
+
+  .navbar-links {
+    gap: 1.6rem;
+    font-size: 1.3rem;
+  }
+
+  .navbar-logo img {
+    height: 8rem;
+  }
+}
+
 /* Small desktop or large tablets in landscape */
 @media (min-width: 1024px) {
   /* Styles for small desktops or larger tablets */
@@ -155,7 +168,7 @@ a {
   }
 
   .navbar-logo img {
-    height: 8.5rem;
+    height: 9rem;
   }
 }
 
