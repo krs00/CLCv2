@@ -23,7 +23,7 @@
 ---
 
 ## 🔸 Accent Color
-- **Name:** Construction Red  
+- **Name:** Red  
 - **Hex:** `#D64045`  
 - **Usage:**  
   - Call-to-action buttons (CTAs)  
