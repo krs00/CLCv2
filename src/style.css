@@ -4,6 +4,11 @@
 a {
   text-decoration: none;
   color: #9ed8db;
+  transition: color 0.3s ease-in-out; /* Optional: smooth hover effect */
+}
+
+a:hover {
+  color: #d64045; /* soft, modern red */
 }
 
 .navbar {
@@ -39,6 +44,10 @@ a {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   /* text-transform: uppercase; */
+   user-select: none;
+  -webkit-user-select: none; /* For Safari */
+  -ms-user-select: none; /* For IE/Edge */
+
 }
 
 #navbar-toggle {
