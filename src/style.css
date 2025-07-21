@@ -33,7 +33,7 @@ a {
   list-style-type: none;
   padding-left: 0;
   display: none;
-  font-family: "San Francisco", "Arial", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 
@@ -108,7 +108,7 @@ a {
     padding: 0;
     display: flex; /* Horizontal layout */
     gap: 1.4rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .navbar-logo img {
