@@ -1,4 +1,20 @@
 @import "./styles/reset.css";
+/* COLOR VARIABLES */
+:root {
+  /* Brand Colors */
+  --color-primary: #173F5F;          /* Deep navy blue – main brand color */
+  --color-secondary: #20639B;        /* Medium blue – secondary brand color */
+
+  /* Button Colors */
+  --button-bg: #ED553B;              /* Warm orange – button background */
+  --button-hover-bg: #F6D55C;        /* Bright yellow – button hover background */
+
+  /* Neutrals */
+  --neutral-light: #FAF9F6;          /* Light neutral – page background */
+  --neutral-dark: #2B2B2B;           /* Dark neutral – main text color */
+}
+
+
 /* maybe magistral font */
 
 /* NAVBAR */
@@ -11,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1d3354;
+  background-color: var(--color-primary);
   height: 6rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -44,11 +60,12 @@
   text-decoration: none;
   color: #e9fff9;
   transition: color 0.3s ease-in-out; /* Optional: smooth hover effect */
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
 }
 
 .navbar-links-text:hover {
-  color: #d64045; /* soft, modern red */
+  color: #d64045;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 #navbar-toggle {
@@ -111,7 +128,7 @@
 
 .hero-heading-text {
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   color: #e9fff9;
   font-weight: bold;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
@@ -119,7 +136,7 @@
 
 .hero-sub-text {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin: 1rem;
   margin-bottom: 2rem;
   color: #e9fff9;
