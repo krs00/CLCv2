@@ -122,11 +122,13 @@
   min-height: 70vh;
   justify-content: center;
   overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .hero-heading-text {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--neutral-light);
   font-weight: bold;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
@@ -197,17 +199,20 @@
 }
 
 /* HERO IMAGE END */
+/* HERO IMAGE END */
+/* HERO IMAGE END */
 
 /* SECTION2 */
 .section2-container {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  gap: 2rem;
-  min-height: 70vh;
+  /* gap: 2rem; */
+  min-height: 40vh;
   justify-content: center;
   overflow: hidden;
   background-color: var(--neutral-dark);
+  text-align: center;
 }
 
 .section2-divider-container {
@@ -236,6 +241,9 @@
 /* Medium devices (phones in landscape mode or smaller tablets) */
 @media (min-width: 480px) {
   /* Styles for medium devices */
+  .hero-heading-text {
+    font-size: 2.5rem;
+  }
 }
 
 /* Larger phones or small tablets */
@@ -265,7 +273,8 @@
     padding: 0;
     display: flex; /* Horizontal layout */
     gap: 1.4rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    margin-left: 2rem;
   }
 
   .navbar-logo img {
@@ -287,10 +296,10 @@
 
   /* HERO IMAGE */
 
-  .heading-text-container {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
+  .hero-items-container {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 
   .hero-heading-text {
     text-align: left;
@@ -301,8 +310,6 @@
   }
 
   .hero-sub-container {
-    padding-left: 4rem;
-    padding-right: 4rem;
     text-align: left;
   }
 
@@ -313,19 +320,24 @@
   .hero-divider-container {
     display: flex;
     justify-content: left;
-    padding-left: 4rem;
   }
 
   .hero-btn-container {
     display: flex;
     justify-content: left;
-    padding-left: 4rem;
   }
 
   .hero-divider {
     width: 5.5rem;
   }
   /* HERO IMAGE END */
+
+  /* SECTION2 */
+.section2-container {
+  padding-left: 16rem;
+  padding-right: 16rem;
+
+}
 }
 
 /* extra breakpoint for navbar */
@@ -333,7 +345,7 @@
   /* NAVBAR */
   .navbar-links {
     gap: 1.6rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .navbar-logo img {
@@ -352,7 +364,7 @@
   }
 
   .navbar-logo img {
-    height: 8rem;
+    height: 8.2rem;
   }
   /* NAVBAR END */
 }
