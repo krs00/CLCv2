@@ -1,18 +1,20 @@
 @import "./styles/reset.css";
+
 /* COLOR VARIABLES */
 :root {
-  /* Brand Colors */
-  --color-primary: #173f5f; /* Deep navy blue – main brand color */
-  --color-secondary: #20639b; /* Medium blue – secondary brand color */
+  --color-primary: #061a40;
+  --color-secondary: #0353a4;
 
-  /* Button Colors */
-  --button-bg: #ed553b; /* Warm orange – button background */
-  --button-hover-bg: #f6d55c; /* Bright yellow – button hover background */
+  --button-primary: #003559;
+  --button-secondary: #006daa;
+
+  --color-highlight: #ffbf00;
 
   /* Neutrals */
-  --neutral-light: #faf9f6; /* Light neutral – page background */
-  --neutral-dark: #2b2b2b; /* Dark neutral – main text color */
+  --neutral-light: #fdf9f3;
+  --neutral-dark: #2b2b2b;
 
+  /* Fonts */
   --font-one: "Montserrat", sans-serif;
   --font-two: "Open Sans", sans-serif;
 }
@@ -37,13 +39,13 @@
 
 .nav-bottom {
   height: 0.25rem;
-  background-color: var(--button-bg);
+  background-color: var(--color-secondary);
   width: 100%;
 }
 
 .nav-bottom2 {
   height: 0.25rem;
-  background-color: var(--color-secondary);
+  background-color: var(--button-secondary);
   width: 100%;
 }
 
@@ -53,20 +55,17 @@
   display: none;
   font-family: var(--font-one);
   font-weight: bold;
-  user-select: none;
-  -webkit-user-select: none; /* For Safari */
-  -ms-user-select: none; /* For IE/Edge */
 }
 
 .navbar-links-text {
   text-decoration: none;
   color: var(--neutral-light);
   transition: color 0.3s ease-in-out; /* Optional: smooth hover effect */
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+  /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7); */
 }
 
 .navbar-links-text:hover {
-  color: var(--button-hover-bg);
+  color: var(--button-secondary);
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
@@ -101,9 +100,6 @@
   height: 5.1rem;
   width: auto; /* Maintain aspect ratio */
   display: block;
-  user-select: none;
-  -webkit-user-select: none; /* For Safari */
-  -ms-user-select: none; /* For IE/Edge */
   flex-shrink: 0; /* Prevent shrinking in flex containers */
 }
 /* NAVBAR END */
@@ -166,8 +162,8 @@
   border: none;
   display: flex;
   padding: 0.75rem 1.5rem;
-  background-color: var(--button-bg);
-  color: var(--neutral-light);
+  background-color: var(--color-highlight);
+  color: var(--neutral-dark);
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: bold;
@@ -177,10 +173,14 @@
   vertical-align: middle;
   align-items: center;
   border-radius: 0.5rem;
-  user-select: none;
   gap: 0.75rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
   transition: all 0.6s ease;
+}
+
+.hero-action-btn:hover {
+  background-color: var(--button-secondary);
+  color: var(--neutral-light);
 }
 
 .hero-image {
@@ -192,7 +192,6 @@
   object-fit: cover; /* fill container without distortion */
   z-index: 1; /* below the text */
   pointer-events: none; /* so clicks go through image */
-  user-select: none; /* avoid accidental selection */
   z-index: -1;
   filter: brightness(19%) blur(0px);
 }
@@ -259,6 +258,48 @@
     height: 0.5rem;
   }
   /* NAVBAR END */
+
+  /* HERO IMAGE */
+
+  .heading-text-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .hero-heading-text {
+    text-align: left;
+  }
+
+  .hero-btn-container {
+    margin-top: 2rem;
+  }
+
+  .hero-sub-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: left;
+  }
+
+  .hero-sub-text {
+    margin: 0rem;
+    text-align: left;
+  }
+  .hero-divider-container {
+    display: flex;
+    justify-content: left;
+    padding-left: 4rem;
+  }
+
+  .hero-btn-container {
+    display: flex;
+    justify-content: left;
+    padding-left: 4rem;
+  }
+
+  .hero-divider {
+    width: 5.5rem;
+  }
+  /* HERO IMAGE END */
 }
 
 /* extra breakpoint for navbar */
@@ -308,9 +349,40 @@
     height: 8.9rem;
   }
   /* NAVBAR END */
+
+  .hero-heading-text {
+    font-size: 3rem;
+  }
+
+  .hero-sub-text {
+    font-size: 2rem;
+  }
+
+  /* .hero-btn-container {
+    margin-top: 4rem;
+  } */
+
+  .hero-action-btn {
+    font-size: 1rem; /* increase text size */
+    line-height: 1.25rem; /* adjust line height */
+    padding: 1rem 2rem; /* make the button taller and wider */
+    gap: 1rem; /* more space between icon and text */
+    border-radius: 0.75rem; /* slightly rounder corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6); /* slightly deeper shadow */
+  }
 }
 
 /* Very large screens */
 @media (min-width: 1920px) {
   /* Styles for very large screens (4K and above) */
+}
+
+/* UTILITY CLASSES */
+/* UTILITY CLASSES */
+/* UTILITY CLASSES */
+
+.user-select-none {
+  user-select: none;
+  -webkit-user-select: none; /* For Safari */
+  -ms-user-select: none; /* For IE/Edge */
 }
