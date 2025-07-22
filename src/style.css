@@ -2,18 +2,20 @@
 /* COLOR VARIABLES */
 :root {
   /* Brand Colors */
-  --color-primary: #173F5F;          /* Deep navy blue – main brand color */
-  --color-secondary: #20639B;        /* Medium blue – secondary brand color */
+  --color-primary: #173f5f; /* Deep navy blue – main brand color */
+  --color-secondary: #20639b; /* Medium blue – secondary brand color */
 
   /* Button Colors */
-  --button-bg: #ED553B;              /* Warm orange – button background */
-  --button-hover-bg: #F6D55C;        /* Bright yellow – button hover background */
+  --button-bg: #ed553b; /* Warm orange – button background */
+  --button-hover-bg: #f6d55c; /* Bright yellow – button hover background */
 
   /* Neutrals */
-  --neutral-light: #FAF9F6;          /* Light neutral – page background */
-  --neutral-dark: #2B2B2B;           /* Dark neutral – main text color */
-}
+  --neutral-light: #faf9f6; /* Light neutral – page background */
+  --neutral-dark: #2b2b2b; /* Dark neutral – main text color */
 
+  --font-one: "Montserrat", sans-serif;
+  --font-two: "Open Sans", sans-serif;
+}
 
 /* maybe magistral font */
 
@@ -35,13 +37,13 @@
 
 .nav-bottom {
   height: 0.25rem;
-  background-color: #d64045;
+  background-color: var(--button-bg);
   width: 100%;
 }
 
 .nav-bottom2 {
   height: 0.25rem;
-  background-color: #467599;
+  background-color: var(--color-secondary);
   width: 100%;
 }
 
@@ -49,7 +51,7 @@
   list-style-type: none;
   padding-left: 0;
   display: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-one);
   font-weight: bold;
   user-select: none;
   -webkit-user-select: none; /* For Safari */
@@ -58,13 +60,13 @@
 
 .navbar-links-text {
   text-decoration: none;
-  color: #e9fff9;
+  color: var(--neutral-light);
   transition: color 0.3s ease-in-out; /* Optional: smooth hover effect */
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
 }
 
 .navbar-links-text:hover {
-  color: #d64045;
+  color: var(--button-hover-bg);
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
@@ -109,11 +111,11 @@
 /* HERO IMAGE */
 
 .header-text {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-one);
 }
 
 .sub-text {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-two);
 }
 
 .hero-items-container {
@@ -129,7 +131,7 @@
 .hero-heading-text {
   text-align: center;
   font-size: 2.5rem;
-  color: #e9fff9;
+  color: var(--neutral-light);
   font-weight: bold;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
 }
@@ -139,7 +141,7 @@
   font-size: 1.4rem;
   margin: 1rem;
   margin-bottom: 2rem;
-  color: #e9fff9;
+  color: var(--neutral-light);
   font-weight: bold;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
 }
@@ -160,12 +162,12 @@
 }
 
 .hero-action-btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-one);
   border: none;
   display: flex;
   padding: 0.75rem 1.5rem;
-  background-color: #d64045;
-  color: #ffffff;
+  background-color: var(--button-bg);
+  color: var(--neutral-light);
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: bold;
@@ -192,7 +194,7 @@
   pointer-events: none; /* so clicks go through image */
   user-select: none; /* avoid accidental selection */
   z-index: -1;
-  filter: brightness(21%) blur(0px);
+  filter: brightness(19%) blur(0px);
 }
 
 /* HERO IMAGE END */
