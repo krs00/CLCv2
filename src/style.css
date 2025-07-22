@@ -18,7 +18,7 @@
 }
 
 .nav-bottom {
-  height: 0.5rem;
+  height: 0.25rem;
   background-color: #d64045;
   width: 100%;
 }
@@ -233,7 +233,7 @@
   }
 
   .nav-bottom {
-    height: 1rem;
+    height: 0.5rem;
   }
 
   .nav-bottom2 {
