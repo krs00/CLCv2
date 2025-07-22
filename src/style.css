@@ -2,16 +2,6 @@
 /* maybe magistral font */
 
 /* NAVBAR */
-a {
-  text-decoration: none;
-  color: #9ed8db;
-  transition: color 0.3s ease-in-out; /* Optional: smooth hover effect */
-}
-
-a:hover {
-  color: #d64045; /* soft, modern red */
-}
-
 .navbar {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
@@ -45,10 +35,20 @@ a:hover {
   display: none;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  /* text-transform: uppercase; */
   user-select: none;
   -webkit-user-select: none; /* For Safari */
   -ms-user-select: none; /* For IE/Edge */
+}
+
+.navbar-links-text {
+  text-decoration: none;
+  color: #e9fff9;
+  transition: color 0.3s ease-in-out; /* Optional: smooth hover effect */
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.navbar-links-text:hover {
+  color: #d64045; /* soft, modern red */
 }
 
 #navbar-toggle {
@@ -106,11 +106,15 @@ a:hover {
   gap: 2rem;
   height: 70vh;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero-heading-text {
   text-align: center;
   font-size: 2.3rem;
+  color: #e9fff9;
+  font-weight: bold;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-sub-text {
@@ -118,15 +122,19 @@ a:hover {
   font-size: 1.3rem;
   margin: 1rem;
   margin-bottom: 2rem;
+  color: #e9fff9;
+  font-weight: bold;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero-divider-container{
+.hero-divider-container {
   display: flex;
   justify-content: center;
 }
 
 .hero-divider {
-  width: 3rem;
+  width: 4rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-btn-container {
@@ -136,10 +144,10 @@ a:hover {
 
 .hero-action-btn {
   font-family: "Montserrat", sans-serif;
-    border: none;
+  border: none;
   display: flex;
   padding: 0.75rem 1.5rem;
-  background-color: #D64045;
+  background-color: #d64045;
   color: #ffffff;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -152,14 +160,29 @@ a:hover {
   border-radius: 0.5rem;
   user-select: none;
   gap: 0.75rem;
-  box-shadow:
-    0 4px 6px -1px #488aec31,
-    0 2px 4px -1px #488aec17;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
   transition: all 0.6s ease;
 }
 
+.hero-image {
+  position: absolute; /* take image out of normal flow */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill container without distortion */
+  z-index: 1; /* below the text */
+  pointer-events: none; /* so clicks go through image */
+  user-select: none; /* avoid accidental selection */
+  z-index: -1;
+  filter: brightness(21%) blur(0px);
+}
 
 /* HERO IMAGE END */
+
+/* START MEDIA QUERIES */
+/* START MEDIA QUERIES */
+/* START MEDIA QUERIES */
 
 /* Small devices (phones in portrait mode) */
 @media (min-width: 320px) {
@@ -263,7 +286,7 @@ a:hover {
   }
 
   .navbar-logo img {
-    height: 9rem;
+    height: 8.9rem;
   }
   /* NAVBAR END */
 }
