@@ -1,6 +1,7 @@
 @import "./styles/reset.css";
 /* maybe magistral font */
 
+
 /* NAVBAR */
 a {
   text-decoration: none;
@@ -87,6 +88,7 @@ a:hover {
   -ms-user-select: none; /* For IE/Edge */
   flex-shrink: 0; /* Prevent shrinking in flex containers */
 }
+/* NAVBAR END */
 
 /* Small devices (phones in portrait mode) */
 @media (min-width: 320px) {
@@ -106,6 +108,8 @@ a:hover {
 /* Tablets */
 @media (min-width: 768px) {
   /* Styles for tablets */
+
+  /* NAVBAR */
   #navbar-toggle {
     display: none;
   }
@@ -141,10 +145,12 @@ a:hover {
   .nav-bottom2 {
     height: 0.5rem;
   }
+  /* NAVBAR END */
 }
 
 /* extra breakpoint for navbar */
 @media (min-width: 960px) {
+  /* NAVBAR */
   .navbar-links {
     gap: 1.6rem;
     font-size: 1.3rem;
@@ -153,11 +159,13 @@ a:hover {
   .navbar-logo img {
     height: 8rem;
   }
+  /* NAVBAR END */
 }
 
 /* Small desktop or large tablets in landscape */
 @media (min-width: 1024px) {
   /* Styles for small desktops or larger tablets */
+  /* NAVBAR */
   .navbar-links {
     gap: 1.6rem;
     font-size: 1.3rem;
@@ -166,6 +174,7 @@ a:hover {
   .navbar-logo img {
     height: 8rem;
   }
+  /* NAVBAR END */
 }
 
 /* Laptops and desktops */
@@ -176,6 +185,7 @@ a:hover {
 /* Larger desktops */
 @media (min-width: 1440px) {
   /* Styles for larger desktops */
+  /* NAVBAR */
   .navbar-links {
     gap: 2rem;
     font-size: 1.5rem;
@@ -184,6 +194,7 @@ a:hover {
   .navbar-logo img {
     height: 9rem;
   }
+  /* NAVBAR END */
 }
 
 /* Very large screens */
