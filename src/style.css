@@ -1,7 +1,6 @@
 @import "./styles/reset.css";
 /* maybe magistral font */
 
-
 /* NAVBAR */
 a {
   text-decoration: none;
@@ -90,6 +89,78 @@ a:hover {
 }
 /* NAVBAR END */
 
+/* HERO IMAGE */
+
+.header-text {
+  font-family: "Montserrat", sans-serif;
+}
+
+.sub-text {
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero-items-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+  height: 70vh;
+  justify-content: center;
+}
+
+.hero-heading-text {
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.hero-sub-text {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-divider-container{
+  display: flex;
+  justify-content: center;
+}
+
+.hero-divider {
+  width: 3rem;
+}
+
+.hero-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-action-btn {
+  font-family: "Montserrat", sans-serif;
+    border: none;
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  background-color: #D64045;
+  color: #ffffff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  user-select: none;
+  gap: 0.75rem;
+  box-shadow:
+    0 4px 6px -1px #488aec31,
+    0 2px 4px -1px #488aec17;
+  transition: all 0.6s ease;
+}
+
+
+/* HERO IMAGE END */
+
 /* Small devices (phones in portrait mode) */
 @media (min-width: 320px) {
   /* Styles for small devices */
@@ -149,7 +220,7 @@ a:hover {
 }
 
 /* extra breakpoint for navbar */
-@media (min-width: 960px) {
+@media (min-width: 953px) {
   /* NAVBAR */
   .navbar-links {
     gap: 1.6rem;
