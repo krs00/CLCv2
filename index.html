@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- PRELOAD IMAGES -->
+    <link rel="preload" as="image" href="hero-img-1.webp" />
+    <link rel="preload" as="image" href="hero-img-2.webp" />
+    <link rel="preload" as="image" href="hero-img-3.webp" />
 
     <!-- FAVICON -->
     <link rel="icon" href="Logo5.svg" type="image/svg+xml" />
@@ -96,6 +100,18 @@
 
     <section id="hero-section">
       <div class="hero-container">
+        <!-- Crossfading Background Images -->
+        <div class="hero-image-container">
+          <img
+            src="hero-img-1.webp"
+            alt="Hero image 1"
+            class="hero-image active"
+          />
+          <img src="hero-img-2.webp" alt="Hero image 2" class="hero-image" />
+          <img src="hero-img-3.webp" alt="Hero image 3" class="hero-image" />
+        </div>
+
+        <!-- Hero Text & Content -->
         <div class="hero-items-container">
           <div class="heading-text-container">
             <h1 class="hero-heading-text header-text user-select-none">
@@ -123,11 +139,6 @@
               Start Your Project
             </button>
           </div>
-          <img
-            src="hero-img-1.webp"
-            alt="Hero image"
-            class="hero-image user-select-none"
-          />
         </div>
       </div>
     </section>
@@ -209,7 +220,7 @@
           id="parallax-img"
         />
         <div class="section4-content">
-          <p class="section4-heading">
+          <p class="section4-heading user-select-none">
             We’re here to help move your project forward.
           </p>
         </div>
@@ -249,8 +260,10 @@
           &copy; 2025 Christ-Like Carpentry and Repair. All rights reserved.
         </p>
 
-        <p>made with ❤️ by <a class="unstyled-link" href="https://github.com/krs00/">krs00</a></p>
-
+        <p>
+          made with ❤️ by
+          <a class="unstyled-link" href="https://github.com/krs00/">krs00</a>
+        </p>
       </div>
     </footer>
 
