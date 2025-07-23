@@ -70,9 +70,10 @@
 }
 
 #navbar-toggle {
-  width: 5rem;
-  height: 5rem;
-  background: rgb(0, 0, 0);
+  /* HEIGHT AND WIDTH MUST MATCH NAVLEFTMOBILE */
+  width: 45px;
+  height: 45px;
+  background-color: var(--button-primary);
   border: none;
   padding: 0;
   margin: 0;
@@ -81,8 +82,9 @@
 }
 
 .nav-left-mobile {
-  width: 5rem;
-  height: 5rem;
+  /* HEIGHT AND WIDTH MUST MATCH NAVBARTOGGLE */
+  width: 45px;
+  height: 45px;
   border: none;
   padding: 0;
   margin: 0;
@@ -124,6 +126,7 @@
   overflow: hidden;
   padding-left: 1rem;
   padding-right: 1rem;
+  position: relative;
 }
 
 .hero-heading-text {
@@ -151,7 +154,9 @@
 
 .hero-divider {
   width: 4rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  height: 2px; /* or however thick you want the line */
+  background-color: var(--neutral-light);
+  border: none; /* remove default border */
 }
 
 .hero-btn-container {
@@ -186,16 +191,15 @@
 }
 
 .hero-image {
-  position: absolute; /* take image out of normal flow */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fill container without distortion */
-  z-index: 1; /* below the text */
-  pointer-events: none; /* so clicks go through image */
+  object-fit: cover;
+  pointer-events: none;
   z-index: -1;
-  filter: brightness(19%) blur(0px);
+  filter: brightness(21%) blur(0px);
 }
 
 /* HERO IMAGE END */
@@ -223,6 +227,7 @@
 .section2-divider-container {
   display: flex;
   justify-content: center;
+  background-color: var(--neutral-dark);
 }
 
 .section2-divider {
@@ -263,7 +268,7 @@
   min-height: 40vh;
   justify-content: center;
   overflow: hidden;
-  background-color: var(--button-secondary);
+  background-color: var(--button-primary);
   text-align: center;
 }
 
@@ -288,7 +293,7 @@
 
 .section3-heading {
   font-family: var(--font-one);
-  color: var(--color-highlight);
+  color: var(--neutral-light);
   font-size: 1.3rem;
   font-weight: bold;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
@@ -303,6 +308,86 @@
 /* SECTION3 END */
 /* SECTION3 END */
 /* SECTION3 END */
+
+/* SECTION4 */
+/* SECTION4 */
+/* SECTION4 */
+
+.section4-divider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Removes any vertical spacing */
+  padding: 0; /* Also important */
+  height: 4px; /* Matches the height of the hr */
+  background-color: var(--button-primary); /* So there's no gap behind the HR */
+}
+
+.section4-divider {
+  /* HEIGHT MUST MATCH DIVIDER CONTAINER */
+  height: 4px;
+  width: 10rem;
+  background-color: var(--color-highlight);
+  border: none;
+  margin: 0; /* Critical: removes default spacing */
+}
+
+.section4-container {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 4rem 2rem;
+}
+
+.hero-image4 {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 200%; /* slightly larger for smoother movement */
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+  filter: brightness(20%);
+  transition: transform 0.2s ease-out;
+}
+
+.section4-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* SECTION4 END */
+/* SECTION4 END */
+/* SECTION4 END */
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 1rem;
+  min-height: 70vh;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--neutral-dark);
+  text-align: center;
+}
+
+/* FOOTER END */
+/* FOOTER END */
+/* FOOTER END */
 
 /* START MEDIA QUERIES */
 /* START MEDIA QUERIES */
