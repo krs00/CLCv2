@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--color-primary);
+  background-color: var(--button-primary);
   height: 6rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -61,7 +61,7 @@
   text-decoration: none;
   color: var(--neutral-light);
   transition: color 0.3s ease-in-out; /* Optional: smooth hover effect */
-  /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7); */
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
 }
 
 .navbar-links-text:hover {
@@ -203,11 +203,16 @@
 /* HERO IMAGE END */
 
 /* SECTION2 */
+/* SECTION2 */
+/* SECTION2 */
+
 .section2-container {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  /* gap: 2rem; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 1rem;
   min-height: 40vh;
   justify-content: center;
   overflow: hidden;
@@ -221,13 +226,83 @@
 }
 
 .section2-divider {
-  width: 15rem;
-  height: 3px; /* or however thick you want the line */
+  width: 10rem;
+  height: 4px; /* or however thick you want the line */
   background-color: var(--color-highlight);
   border: none; /* remove default border */
 }
 
+.section2-heading {
+  font-family: var(--font-one);
+  color: var(--button-secondary);
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.section2-subtitle {
+  font-family: var(--font-two);
+  color: var(--neutral-light);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+}
 /* SECTION2 END */
+/* SECTION2 END */
+/* SECTION2 END */
+
+/* SECTION3 */
+/* SECTION3 */
+/* SECTION3 */
+
+.section3-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 1rem;
+  min-height: 40vh;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--button-secondary);
+  text-align: center;
+}
+
+.section3-divider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Removes any vertical spacing */
+  padding: 0; /* Also important */
+  height: 4px; /* Matches the height of the hr */
+  background-color: var(--neutral-dark); /* So there's no gap behind the HR */
+}
+
+.section3-divider {
+  /* HEIGHT MUST MATCH DIVIDER CONTAINER */
+  height: 4px;
+  width: 10rem;
+  background-color: var(--color-highlight);
+  border: none;
+  margin: 0; /* Critical: removes default spacing */
+}
+
+.section3-heading {
+  font-family: var(--font-one);
+  color: var(--color-highlight);
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.section3-subtitle {
+  font-family: var(--font-two);
+  color: var(--neutral-light);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* SECTION3 END */
+/* SECTION3 END */
+/* SECTION3 END */
 
 /* START MEDIA QUERIES */
 /* START MEDIA QUERIES */
@@ -297,9 +372,9 @@
   /* HERO IMAGE */
 
   .hero-items-container {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 
   .hero-heading-text {
     text-align: left;
@@ -333,11 +408,10 @@
   /* HERO IMAGE END */
 
   /* SECTION2 */
-.section2-container {
-  padding-left: 16rem;
-  padding-right: 16rem;
-
-}
+  .section2-container {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
 }
 
 /* extra breakpoint for navbar */
@@ -418,6 +492,10 @@
 /* UTILITY CLASSES */
 /* UTILITY CLASSES */
 /* UTILITY CLASSES */
+
+.highlight {
+  color: var(--color-highlight);
+}
 
 .user-select-none {
   user-select: none;
