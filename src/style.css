@@ -334,7 +334,7 @@
 
 .section4-container {
   position: relative;
-  min-height: 50vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -345,10 +345,10 @@
 
 .hero-image4 {
   position: absolute;
-  top: -50%;
+  top: -70%;
   left: 0;
   width: 100%;
-  height: 200%; /* slightly larger for smoother movement */
+  height: 250%; /* slightly larger for smoother movement */
   object-fit: cover;
   z-index: -1;
   pointer-events: none;
@@ -361,6 +361,20 @@
   z-index: 1;
   text-align: center;
   max-width: 800px;
+}
+
+.section4-heading {
+  font-family: var(--font-one);
+  color: var(--neutral-light);
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.section4-subtitle {
+  font-family: var(--font-two);
+  color: var(--neutral-light);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 /* SECTION4 END */
