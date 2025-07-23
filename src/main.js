@@ -7,7 +7,7 @@ window.addEventListener('scroll', () => {
   if (!img || !container) return;
 
   const containerRect = container.getBoundingClientRect();
-  const speed = 0.08;
+  const speed = 0.1;
 
   // Only apply effect when the section is in view
   if (containerRect.top < window.innerHeight && containerRect.bottom > 0) {

@@ -345,10 +345,10 @@
 
 .hero-image4 {
   position: absolute;
-  top: -70%;
+  top: -40%;
   left: 0;
   width: 100%;
-  height: 250%; /* slightly larger for smoother movement */
+  height: 230%; /* slightly larger for smoother movement */
   object-fit: cover;
   z-index: -1;
   pointer-events: none;
