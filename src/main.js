@@ -42,5 +42,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize
   images[current].classList.add("fade-in");
 
-  setInterval(crossfadeNext, 13000); // slower pace
+  setInterval(crossfadeNext, 11000); // slower pace
 });
