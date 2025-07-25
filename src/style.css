@@ -418,6 +418,7 @@
 }
 
 .footer-subtitle-endtag {
+  font-size: 0.8rem;
   font-family: var(--font-two);
   color: rgb(88, 87, 87);
 }
