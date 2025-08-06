@@ -20,7 +20,6 @@
   --font-one: "Montserrat", sans-serif;
   --font-two: "Open Sans", sans-serif;
   --font-three: "Lexend", sans-serif;
-
 }
 
 /* maybe magistral font */
@@ -61,7 +60,7 @@
   list-style-type: none;
   padding-left: 0;
   display: none;
-  font-family: var(--font-three);
+  font-family: var(--font-one);
   /* font-weight: 500; */
 }
 
@@ -70,11 +69,12 @@
   color: var(--neutral-light);
   transition: color 0.3s ease-in-out; /* Optional: smooth hover effect */
   /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7); */
-  letter-spacing: 1.4px;
+  letter-spacing: 0.5px;
+  /* text-transform: uppercase; */
 }
 
 .navbar-links-text:hover {
-  color: var(--button-secondary);
+  color: var(--color-highlight);
 }
 
 #navbar-toggle {
@@ -466,7 +466,7 @@
   }
 
   .navbar-container {
-    height: 10rem;
+    height: 7rem;
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -583,12 +583,12 @@
   /* Styles for larger desktops */
   /* NAVBAR */
   .navbar-links {
-    gap: 2rem;
-    font-size: 1.5rem;
+    gap: 2.5rem;
+    font-size: 0.9rem;
   }
 
   .navbar-logo img {
-    height: 8.9rem;
+    height: 5rem;
   }
   /* NAVBAR END */
 
